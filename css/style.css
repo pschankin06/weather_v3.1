@@ -1,0 +1,284 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 600px;
+}
+
+.header {
+  border: 1px solid #000;
+}
+
+.header-form {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+}
+
+.header-input {
+  padding: 11px 0 13px 16px;
+  width: 100%;
+  font-size: 22px;
+}
+
+.header-input::placeholder {
+  font-size: 18px;
+  line-height: 21px;
+  color: #696969;
+}
+
+.header-button {
+  background-color: inherit;
+  padding: 7px 17px 8px 0;
+}
+
+.main__block {
+  display: flex;
+}
+
+.main__block-info {
+  width: 299px;
+  border: 1px solid #000;
+  border-top: 0;
+}
+
+.main__block-content {
+  height: 345px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.main__block-info-now-temper {
+  font-size: 70px;
+  line-height: 82px;
+  padding: 20px 0 40px 23px;
+}
+
+.main__block-info-now-weather {
+  text-align: center;
+  padding-bottom: 91px;
+}
+
+.img {
+  width: 90px;
+  height: 90px;
+  display: block;
+  margin: -17px auto;
+  object-fit: cover;
+}
+
+.main__block-info-now-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city {
+  padding: 0 0 17px 12px;
+}
+
+.like-city {
+  padding: 5px;
+  margin: 0 21px 18px 0;
+  background-color: inherit;
+}
+
+.like-city--added {
+  fill: red;
+  stroke: red;
+}
+
+.like-city path {
+  transition: stroke, 0.4s;
+}
+
+.like-city:hover path {
+  stroke: red;
+}
+
+.main__block-details-city {
+  padding: 33px 0 0 17px;
+}
+
+.main__block-details-settings {
+  padding: 42px 0 0 15px;
+}
+
+.weather-conditions {
+  padding-bottom: 12px;
+}
+
+.main__block-forecast {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  height: 345px;
+}
+
+.main__block-forecast::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.main__block-forecast-time {
+  border: 1px solid #000;
+  width: 265px;
+  height: 120px;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 auto 9px;
+}
+
+.city--dop-px {
+  margin-bottom: 7px;
+}
+
+.main__block-forecast-timeline {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.main__block-forecast-date {
+  padding: 6px 0 0 8px;
+}
+
+.main__block-forecast-hour {
+  padding: 6px 12px 0 0;
+}
+
+.main__block-forecast-characteristic {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__block-forecast-characteristic-temperature {
+  padding: 0 0 13px 10px;
+}
+
+.forecast__condition {
+  padding: 0 10px 9px 0;
+}
+
+.content__item {
+  display: none;
+}
+
+.content__item:target {
+  display: block;
+}
+
+.main__block-info-settings {
+  display: flex;
+  border-top: 1px solid #000;
+  height: 44px;
+  font-size: 18px;
+}
+
+.tab-triggers {
+  flex-grow: 1;
+  width: 99px;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #000;
+}
+
+.tab-triggers:last-child {
+  border-right: 0;
+}
+
+.tab-triggers:hover {
+  background: black;
+  color: white;
+}
+
+.main__block-locations {
+  width: 302px;
+}
+
+.main__block-locations-add {
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  height: 68px;
+  padding: 0 0 7px 18px;
+  border: 1px solid #000;
+  border-top: 0;
+  border-left: 0;
+}
+
+.main__block-locations-list {
+  padding: 33px 0 33px 18px;
+  border: 1px solid #000;
+  border-top: 0;
+  border-left: 0;
+  height: 322px;
+}
+
+.main__block-locations-list-items {
+  max-height: 260px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.main__block-locations-list-items::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.main__block-locations-item {
+  padding-bottom: 16px;
+  position: relative;
+}
+
+.main__block-locations-item:last-child {
+  padding-bottom: 0;
+}
+
+.main__block-locations-item-link {
+  font-size: 24px;
+  background-color: inherit;
+}
+
+.main__block-locations-item-link:hover {
+  text-decoration: underline;
+}
+
+.delete-button {
+  content: '';
+  position: absolute;
+  background-image: url('../images/close-icon.svg');
+  transform: rotate(45deg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  top: 6px;
+  right: 12px;
+  border: transparent;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.condition-icon {
+  width: 62px;
+  height: 62px;
+  margin-top: -12px;
+  margin-right: -7px;
+}
