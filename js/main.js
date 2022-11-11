@@ -28,7 +28,7 @@ export const favoriteCities = new Set();
 
 window.addEventListener('load', event => {
   const currentCity = getCurrentCity();
-  if (getCurrentCity()) {
+  if (currentCity) {
     getCityData(currentCity);
     getCityCoordinates(currentCity);
   }
